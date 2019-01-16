@@ -1,0 +1,1 @@
+# psgg-addon-sample

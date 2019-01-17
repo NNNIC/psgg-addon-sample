@@ -16,5 +16,19 @@ namespace addon_sample1
         {
             InitializeComponent();
         }
+
+        private void EditorForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (DialogResult == DialogResult.None)
+            {
+                DialogResult = DialogResult.Cancel;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+            Close();
+        }
     }
 }

@@ -215,6 +215,7 @@
             this.ok_button.TabIndex = 11;
             this.ok_button.Text = "OK";
             this.ok_button.UseVisualStyleBackColor = true;
+            this.ok_button.Click += new System.EventHandler(this.ok_button_Click);
             // 
             // textBox1
             // 
@@ -246,6 +247,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "ItemEditorForm";
             this.Text = "ItemEditorForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ItemEditorForm_FormClosing);
             this.tabPageHelp.ResumeLayout(false);
             this.tabPageHelp.PerformLayout();
             this.tabPageComment.ResumeLayout(false);

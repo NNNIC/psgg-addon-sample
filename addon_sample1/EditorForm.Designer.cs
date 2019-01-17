@@ -34,13 +34,13 @@
             this.pictureBoxClickArea = new System.Windows.Forms.PictureBox();
             this.groupBoxImage = new System.Windows.Forms.GroupBox();
             this.dataGridView_clickable = new System.Windows.Forms.DataGridView();
-            this.Lock = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.GotoState_goto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.H_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.W_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Y_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.X_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LABEL_text = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.X_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Y_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.W_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.H_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GotoState_goto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Lock = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.buttonClickableAdd = new System.Windows.Forms.Button();
             this.buttonClickableDel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -104,9 +104,9 @@
             this.groupBoxAboutLvl1 = new System.Windows.Forms.GroupBox();
             this.checkBoxAboutLvl2 = new System.Windows.Forms.CheckBox();
             this.dataGridView_flagjump = new System.Windows.Forms.DataGridView();
-            this.Gotost_goto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Num_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Flg_gfdef = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Num_num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gotost_goto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonFlagJumpAdd = new System.Windows.Forms.Button();
             this.buttonFlagJumpDel = new System.Windows.Forms.Button();
             this.labelFlagJump = new System.Windows.Forms.Label();
@@ -208,6 +208,41 @@
             this.dataGridView_clickable.Size = new System.Drawing.Size(313, 133);
             this.dataGridView_clickable.TabIndex = 8;
             // 
+            // LABEL_text
+            // 
+            this.LABEL_text.HeaderText = "LABEL";
+            this.LABEL_text.Name = "LABEL_text";
+            this.LABEL_text.Width = 46;
+            // 
+            // X_num
+            // 
+            this.X_num.HeaderText = "X";
+            this.X_num.Name = "X_num";
+            this.X_num.Width = 30;
+            // 
+            // Y_num
+            // 
+            this.Y_num.HeaderText = "Y";
+            this.Y_num.Name = "Y_num";
+            this.Y_num.Width = 30;
+            // 
+            // W_num
+            // 
+            this.W_num.HeaderText = "W";
+            this.W_num.Name = "W_num";
+            this.W_num.Width = 30;
+            // 
+            // H_num
+            // 
+            this.H_num.HeaderText = "H";
+            this.H_num.Name = "H_num";
+            this.H_num.Width = 30;
+            // 
+            // GotoState_goto
+            // 
+            this.GotoState_goto.HeaderText = "GOTO";
+            this.GotoState_goto.Name = "GotoState_goto";
+            // 
             // Lock
             // 
             this.Lock.FalseValue = "0";
@@ -219,41 +254,6 @@
             this.Lock.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.Lock.TrueValue = "1";
             this.Lock.Width = 40;
-            // 
-            // GotoState_goto
-            // 
-            this.GotoState_goto.HeaderText = "GOTO";
-            this.GotoState_goto.Name = "GotoState_goto";
-            // 
-            // H_num
-            // 
-            this.H_num.HeaderText = "H";
-            this.H_num.Name = "H_num";
-            this.H_num.Width = 30;
-            // 
-            // W_num
-            // 
-            this.W_num.HeaderText = "W";
-            this.W_num.Name = "W_num";
-            this.W_num.Width = 30;
-            // 
-            // Y_num
-            // 
-            this.Y_num.HeaderText = "Y";
-            this.Y_num.Name = "Y_num";
-            this.Y_num.Width = 30;
-            // 
-            // X_num
-            // 
-            this.X_num.HeaderText = "X";
-            this.X_num.Name = "X_num";
-            this.X_num.Width = 30;
-            // 
-            // LABEL_text
-            // 
-            this.LABEL_text.HeaderText = "LABEL";
-            this.LABEL_text.Name = "LABEL_text";
-            this.LABEL_text.Width = 46;
             // 
             // buttonClickableAdd
             // 
@@ -382,6 +382,7 @@
             this.button1.TabIndex = 49;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -842,20 +843,20 @@
             this.dataGridView_flagjump.Size = new System.Drawing.Size(313, 133);
             this.dataGridView_flagjump.TabIndex = 8;
             // 
-            // Gotost_goto
+            // Flg_gfdef
             // 
-            this.Gotost_goto.HeaderText = "GOTO";
-            this.Gotost_goto.Name = "Gotost_goto";
+            this.Flg_gfdef.HeaderText = "フラグ名";
+            this.Flg_gfdef.Name = "Flg_gfdef";
             // 
             // Num_num
             // 
             this.Num_num.HeaderText = "数値";
             this.Num_num.Name = "Num_num";
             // 
-            // Flg_gfdef
+            // Gotost_goto
             // 
-            this.Flg_gfdef.HeaderText = "フラグ名";
-            this.Flg_gfdef.Name = "Flg_gfdef";
+            this.Gotost_goto.HeaderText = "GOTO";
+            this.Gotost_goto.Name = "Gotost_goto";
             // 
             // buttonFlagJumpAdd
             // 
@@ -1112,6 +1113,7 @@
             this.Controls.Add(this.groupBoxImage);
             this.Name = "EditorForm";
             this.Text = "EditorForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EditorForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOvl)).EndInit();
             this.panelImage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClickArea)).EndInit();

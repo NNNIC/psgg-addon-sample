@@ -1,7 +1,7 @@
 C:\Users\gea01\Documents\psgg\psgg-addon-sample\addon_sample1\bin\Debug\addon_sample1.dll
 C:\Users\gea01\Documents\psgg\psgg-addon-sample\addon_sample1\bin\Debug\addon_sample1.pdb
-C:\Users\gea01\Documents\psgg\psgg-addon-sample\addon_sample1\obj\Debug\addon_sample1.csprojResolveAssemblyReference.cache
 C:\Users\gea01\Documents\psgg\psgg-addon-sample\addon_sample1\obj\Debug\addon_sample1.EditorForm.resources
 C:\Users\gea01\Documents\psgg\psgg-addon-sample\addon_sample1\obj\Debug\addon_sample1.csproj.GenerateResource.Cache
 C:\Users\gea01\Documents\psgg\psgg-addon-sample\addon_sample1\obj\Debug\addon_sample1.dll
 C:\Users\gea01\Documents\psgg\psgg-addon-sample\addon_sample1\obj\Debug\addon_sample1.pdb
+C:\Users\gea01\Documents\psgg\psgg-addon-sample\addon_sample1\obj\Debug\addon_sample1.ItemEditorForm.resources

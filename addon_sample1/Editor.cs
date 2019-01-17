@@ -35,7 +35,7 @@ namespace addon_sample1
 
         #region item editor
         ItemEditorForm m_itemeditor_form;
-        public bool open_item_editor(Control owner)
+        public bool open_itemeditor(Control owner)
         {
             m_itemeditor_form = new ItemEditorForm();
             m_itemeditor_form.DialogResult = DialogResult.None;
